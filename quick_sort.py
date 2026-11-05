@@ -1,15 +1,5 @@
-"""Quick Sort implemented from scratch.
-
-Returns:
-    (sorted_values, comparisons)
-
-The comparison counter counts each element-to-pivot comparison.
-This implementation uses three-way partitioning and additional lists,
-so it is not an in-place Quick Sort.
-"""
 
 import random
-
 
 def quick_sort(values):
     comparisons = 0
@@ -44,12 +34,3 @@ def quick_sort(values):
         return sort(left) + middle + sort(right)
 
     return sort(values), comparisons
-
-
-if __name__ == "__main__":
-    sample = [8, 3, 7, 1, 9, 2, 5, 5]
-    sorted_values, comparison_count = quick_sort(sample)
-
-    print("Original dataset:", sample)
-    print("Sorted dataset:  ", sorted_values)
-    print("Comparisons:     ", comparison_count)
