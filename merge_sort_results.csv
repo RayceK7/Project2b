@@ -1,0 +1,9 @@
+size,distribution,seconds,comparisons,correct
+100000,random,0.238864,1536562,True
+100000,sorted,0.136058,815024,True
+100000,reverse,0.1331,853904,True
+100000,duplicates,0.206496,1480540,True
+250000,random,0.621689,4168914,True
+250000,sorted,0.349563,2221248,True
+250000,reverse,0.352336,2266608,True
+250000,duplicates,0.52263,4014135,True
